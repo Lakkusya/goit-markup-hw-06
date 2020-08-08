@@ -347,22 +347,21 @@ h6 {
   + .modal-icon {
   fill: var(--accent-color);
 }
-.checkbox {
+.user-agree {
   position: relative;
-  margin-right: 7px;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .checkbox-custom-icon {
   position: absolute;
   opacity: 0;
+  top: 0;
+  left: 0;
+  margin-right: 7px;
 }
 .checkbox:checked {
   opacity: 1;
 }
-.checkbox:checked + .modal-form-adree {
+.checkbox:checked + .checkbox-custom-icon {
   opacity: 1;
 }
 
