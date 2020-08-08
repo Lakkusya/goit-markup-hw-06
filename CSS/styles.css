@@ -339,6 +339,7 @@ h6 {
 .contact-form-input:focus + .contact-form-label {
   transform: translateY(-40px) translateX(-16px);
   color: var(--accent-color);
+  font-size: 12px;
 }
 .contact-form-input:focus + .modal-icon {
   fill: var(--accent-color);
