@@ -561,13 +561,13 @@ h6 {
   align-content: center;
 }
 .footer-nav {
-  width: 285px;
+  width: 25%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-join {
-  width: 285px;
+  width: 25%;
   padding-top: 72px;
 }
 .join-list {
@@ -656,7 +656,7 @@ h6 {
 .send-form {
   display: flex;
   align-content: center;
-  width: 570px;
+  width: 50%;
 }
 .footer-form {
   display: flex;
