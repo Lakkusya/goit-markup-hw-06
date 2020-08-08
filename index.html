@@ -74,13 +74,13 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <button data-modal-close type="button" class="close-modal">
+              <svg class="modal-icon-close" width="11" height="11">
+                <use href="./Images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
             <form action="#" class="contact-form">
               <section class="contact-form-section">
-                <button data-modal-close type="button" class="close-modal">
-                  <svg class="modal-icon-close" width="11" height="11">
-                    <use href="./Images/sprite.svg#icon-close"></use>
-                  </svg>
-                </button>
                 <h2 class="contact-form-text">
                   Оставьте свои данные, мы вам перезвоним
                 </h2>
@@ -92,13 +92,9 @@
                     class="contact-form-input"
                     minlength="2"
                     required
-                  />
-                  <label
-                    for="user-name"
-                    class="contact-form-label"
                     placeholder=" "
-                    >Имя</label
-                  >
+                  />
+                  <label for="user-name" class="contact-form-label">Имя</label>
                   <svg class="modal-icon" width="12" height="12">
                     <use href="./Images/sprite.svg#icon-man"></use>
                   </svg>
@@ -111,11 +107,9 @@
                     id="user-tel"
                     required
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  />
-                  <label
-                    for="user-tel"
-                    class="contact-form-label"
                     placeholder=" "
+                  />
+                  <label for="user-tel" class="contact-form-label"
                     >Телефон</label
                   >
                   <svg class="modal-icon" width="12" height="12">
@@ -130,11 +124,9 @@
                     name="user-email"
                     id="user-email"
                     required
-                  />
-                  <label
-                    for="user-email"
-                    class="contact-form-label"
                     placeholder=" "
+                  />
+                  <label for="user-email" class="contact-form-label"
                     >Почта</label
                   >
                   <svg class="modal-icon" width="15" height="12">
@@ -145,19 +137,26 @@
                 <textarea
                   class="contact-form-message"
                   name="user-message"
-                  id=""
                   placeholder="Комментарий"
                 ></textarea>
-                <input
-                  type="checkbox"
-                  class="user-agree"
-                  value="agree"
-                  name="user-agree-check"
-                  id="user-agree"
-                />
-                <label for="user-agree" class="user-agree"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a class="contract" href="">Условия договора</a>
+                <label for="user-agree" class="user-agree">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    value="agree"
+                    name="user-agree-check"
+                    id="user-agree"
+                    placeholder=" "
+                  />
+                  <span class="modal-form-adree">
+                    <svg class="checkbox-custom-icon" width="16" height="15">
+                      <use href="./Images/sprite.svg#icon-checkbox"></use>
+                    </svg>
+                  </span>
+                  <span class="agree-text"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="contract" href="">Условия договора</a>
+                  </span>
                 </label>
               </section>
 
